@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/edtNumeroTarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero Tarjeta 16 digitos"
+        android:inputType="number"
+        android:text="4242424242424242"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtDate"
+            android:hint="MES/AÑO"
+            android:text="12/21"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50" />
+
+        <EditText
+            android:id="@+id/edtCvv"
+            android:hint="***"
+            android:text="123"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCobrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cobrar"
+        android:onClick="OnClickProcesarPago"/>
+
+</LinearLayout>
